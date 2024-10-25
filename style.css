@@ -1,0 +1,190 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.container{
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(#e66465, #9198e5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.display-box{
+    width: 90%;
+    max-width: 450px;
+}
+.container h1{
+    color: white;
+    opacity: 0.80;
+    letter-spacing: 2px;
+    text-align: center;
+    line-height: 1.2;
+}
+.displaypassord{
+    position: relative;
+    background-color: rgb(220, 159, 159);
+    border-radius: 13px;
+    border-bottom: 2px solid rgb(64, 60, 60);
+    margin: 1rem 0;
+    /* padding-top: 13px; */
+
+}
+.displaypassord input{
+    height: 45px;
+    width: 100%;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    color: yellow;
+    padding: 15px 25px;
+    font-weight: 600;
+    line-height: 30px;
+    letter-spacing: 1px;
+    padding-right: 3.25rem;
+    font-size: 20px;
+    /* transform: translateY(-50%); */
+}
+input::placeholder{
+    color: yellow;
+}
+.displaypassord button{
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+.box{
+    width: 100%;
+    /* background-color: ; */
+    background-color: rgb(220, 159, 159);
+    border-bottom: 2px solid rgb(64, 60, 60);
+    border-radius: 20px;
+    padding: 22px;
+    padding-left: 40px;
+}
+.datacopy{
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+.data{
+    position: absolute;
+    background-color: rgb(182, 131, 174);
+    font-size: 1.25rem;
+    top: -35px;
+    left: -25px;
+    padding: 2px 5px;
+    border-radius: 1rem;
+    opacity: 0;
+    transform: scale(0);
+    transform-origin: bottom;
+    transition: all 250ms ease-in-out;
+}
+.data.active{
+    opacity: 1;
+    transform: scale(1);
+}
+.Lenth{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.Lenth p:nth-child(1){
+    color: white;
+    font-size: 22px;
+    font-weight: 600;
+}
+.Lenth p:nth-child(2){
+    /* color: white; */
+    font-size: 22px;
+    font-weight: 600;
+}
+.strength{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    color:white ;
+}
+.indicator{
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+}
+.generatebtn{
+    width: 100%;
+    padding: 1rem 0;
+    background-color: rgb(88, 122, 196);
+    /* border-bottom: 3px solid yellow; */
+    text-align: center;
+    border-radius: 20px;
+    border: none;
+    text-transform: uppercase;
+    font-size: 25px;
+    font-weight: 600;
+    color: yellow;
+    letter-spacing: 1px;  
+}
+.check{
+    display: flex;
+    align-items: center;
+    margin: 1rem 0;
+    gap: 20px;
+}
+.check input{
+    appearance: none;
+    cursor: pointer;
+    position: relative;
+    width: 20px;
+    height: 20px;
+    border: 1px solid cyan;
+    border-radius: 5px;
+}
+.check input:checked{
+    background-color: cyan;
+}
+.check input:checked::before{
+    content: '';
+}
+.check label{
+    color: white;
+    font-size: 20px;
+    letter-spacing: 0.80px;
+}
+.slider{
+    appearance: none;
+    width: 100%;
+    height: 0.75rem;
+    background-color: aqua;
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    border: none;
+}
+.slider::-webkit-slider-thumb{
+    /* z-index: 1; */
+    position: relative;
+    appearance: none;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    background-color: rgb(0, 255, 110);
+    cursor: pointer;
+    margin-top: -3px;
+    box-shadow: 0px 0px 20px 0px rgba(29, 299, 61, 0.56);
+    transition: all 100ms ease-in;
+}
+.slider:focus{
+    outline:2px solid yellow;
+}
+.slider::-webkit-slider-thumb:hover{
+    outline: 2px solid yellow;
+    background-color: black;
+    box-shadow: 0px 0px 20px 0px rgba(29, 299, 61, 0.56);
+}

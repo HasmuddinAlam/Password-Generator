@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <section class="container">
+        <section class="display-box">
+        <h1>PASSWORD GENERATOR</h1>
+        <div class="displaypassord">
+            <input type="text" name="" id="" placeholder="password" readonly class="display">
+            <button class="datacopy">
+                <span class="data" ></span>
+                <i class="fa-regular fa-copy"></i>
+            </button>
+        </div>
+        <div class="box">
+            <div class="Lenth">
+                <p class="password-lenth">Password Lenth</p>
+                <p class="data-lenth">0</p>
+            </div>
+            <input type="range" min="1" max="20" class="slider" step="1" >
+            <div class="check">
+                <input type="checkbox" id="upercase">
+                <label for="upercase">Include Upercase letters</label>
+            </div>
+            <div class="check">
+                <input type="checkbox" id="lowercase">
+                <label for="lowercase">Include Lowercase letters</label>
+            </div>
+            <div class="check">
+                <input type="checkbox" id="Numbers">
+                <label for="Numbers">Include Numbers</label>
+            </div>
+            <div class="check">
+                <input type="checkbox" id="symbols">
+                <label for="symbols">Include Symble </label>
+            </div>
+            <div class="strength">
+                <p>Strength</p>
+                <div class="indicator"></div>
+            </div>
+            <button  class="generatebtn" onclick="calculatestrength() ">GENERATOR PASSWORD</button>
+        </div>
+        </section>
+    </section>
+    <!-- <script src="https://code.jquery.com/jquery-2.2.4js"></script> -->
+    <script src="./script.js"></script>
+</body>
+</html>
